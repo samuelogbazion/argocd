@@ -1,4 +1,4 @@
 resources:
   - deployment.yaml
 commonLabels:
-  owner: samuel22
+  owner: samuel
