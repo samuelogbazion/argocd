@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx
+  name: caddy
   labels:
-    app: nginx
+    app: caddy
 spec:
   selector:
     matchLabels:
-      app: nginx
+      app: caddy
   template:
     metadata:
       labels:
-        app: nginx
+        app: caddy
     spec:
       containers:
-      - name: nginx
-        image: nginx:latest
+      - name: caddy
+        image: caddy:2.6.2-alpine
